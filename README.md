@@ -5,7 +5,7 @@ Observations, insights, and field notes on technology, software systems, product
 ## Articles
 
 - [Codex Desktop and the Emerging Control Plane for Developer Machines](codex-desktop-control-plane.md)
-- [Cursor Should Build the Control Plane for Every Developer Machine — Original Strategic Letter](original-letter-to-cursor.md)
+- [August 16, 2026 — A Strategic Letter to Cursor: Build the Control Plane for Every Developer Machine](original-letter-to-cursor.md)
 
 ## About
 
