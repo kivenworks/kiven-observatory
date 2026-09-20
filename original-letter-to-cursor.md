@@ -2,6 +2,8 @@
 
 *The original strategic letter and the case for a unified execution-node architecture.*
 
+*Written August 16, 2026 · Updated with public evidence September 21, 2026*
+
 > Editorial note: This article preserves the substance and wording of the original letter sent to Cursor in August 2026. The private forwarding instruction and email routing details are omitted. The claims about product direction are an independent strategic analysis, not insider information or a statement of any company’s undisclosed plans.
 
 ## The letter
