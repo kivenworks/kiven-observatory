@@ -1,3 +1,8 @@
+---
+layout: default
+title: WebMCP and Backend MCP: Where Should an Agent Interface Live?
+---
+
 # WebMCP and Backend MCP: Where Should an Agent Interface Live?
 
 *An English-first observation, with a Chinese translation below*
