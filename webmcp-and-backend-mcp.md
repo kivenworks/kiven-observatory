@@ -8,6 +8,14 @@ If a team controls both the frontend and backend of an application, the core age
 
 That distinction matters for internal systems such as firewall management. A backend MCP can expose authoritative, auditable operations directly. WebMCP can improve the experience of an agent working inside the browser, especially when the task depends on the current page, the current user session, or a workflow that exists only in the frontend.
 
+## The central observation: WebMCP should follow the frontend framework
+
+The most important long-term value of WebMCP is not that every team hand-writes another agent API in page scripts. That would create a second surface to keep in sync with the UI, permissions, state model, and backend behavior.
+
+The stronger direction is framework integration. A mature Vue, React, Angular, or similar stack could derive WebMCP tools from the same component metadata, form schemas, route definitions, permission model, and domain actions that already produce the human UI. The framework would own registration, lifecycle, schemas, state refresh, and error handling. Developers would declare the business meaning and consequence level once.
+
+In that model, WebMCP becomes a progressive enhancement of the existing frontend rather than a parallel application interface. The backend MCP remains the direct interface for authoritative system operations; WebMCP becomes the browser-native projection of selected frontend actions.
+
 ## What WebMCP is trying to solve
 
 Traditional browser automation asks an agent to infer intent from a human interface:
@@ -151,7 +159,7 @@ The browser remains valuable even without WebMCP. It can inspect the page, verif
 
 The practical conclusion is simple:
 
-> WebMCP is a promising browser-side agent interface and progressive enhancement mechanism. For an application whose backend we control, backend MCP should remain the core integration. WebMCP becomes worthwhile when the current webpage, browser session, or human-visible workflow is itself part of the required context.
+> WebMCP is a promising browser-side agent interface, but its durable value depends on being integrated into frontend frameworks and shared business schemas. For an application whose backend we control, backend MCP should remain the core integration, while the frontend framework can generate or maintain WebMCP as a browser-facing projection when that context is useful.
 
 ## Sources
 
@@ -172,6 +180,14 @@ The practical conclusion is simple:
 如果一个团队同时掌握应用的前端和后端开发权，那么核心 Agent 接口通常应该优先做成由权威业务服务支撑的后端 MCP。WebMCP 更适合作为浏览器侧适配层：它让 Agent 更容易使用正在打开的 Web 应用，但不应该替代稳定的后端集成。
 
 对于防火墙管理这类内部系统，这个区别很重要。后端 MCP 可以直接暴露权威、可审计的查询和操作；WebMCP 则适合处理依赖当前页面、当前登录会话，或者只存在于前端流程中的任务。
+
+## 核心观察：WebMCP 应该跟随现有前端框架
+
+WebMCP 最重要的长期价值，不是让每个团队在页面脚本中手工再写一套 Agent API。那样会产生一套需要和页面、权限、状态模型及后端行为同步维护的平行接口。
+
+更强的方向是框架整合。成熟的 Vue、React、Angular 或类似前端栈，可以从现有的组件元数据、表单 schema、路由定义、权限模型和业务动作中派生 WebMCP 工具。框架负责工具注册、生命周期、参数 schema、状态刷新和错误处理；开发者只需要一次性声明业务含义和操作风险等级。
+
+这样，WebMCP 就是现有前端的渐进增强，而不是另一套平行应用接口。后端 MCP 继续作为权威系统操作的直接入口；WebMCP 则成为选定前端动作在浏览器中的原生投影。
 
 ## WebMCP 解决什么问题
 
@@ -306,7 +322,7 @@ WebMCP
 
 最终判断是：
 
-> WebMCP 是有前景的浏览器侧 Agent 接口和渐进增强机制。对于后端由我们控制的应用，后端 MCP 应该保持核心地位；只有当当前网页、浏览器会话或可见的人机流程本身属于任务上下文时，WebMCP 才值得单独建设。
+> WebMCP 是有前景的浏览器侧 Agent 接口，但它真正持久的价值取决于能否整合进前端框架和统一业务 schema。对于后端由我们控制的应用，后端 MCP 应该保持核心地位；当页面上下文有价值时，再由前端框架生成或维护 WebMCP 作为浏览器侧投影。
 
 ## 参考资料
 
