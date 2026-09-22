@@ -1,3 +1,8 @@
+---
+layout: default
+title: Codex Desktop and the Emerging Control Plane for Developer Machines
+---
+
 # Codex Desktop and the Emerging Control Plane for Developer Machines
 
 *An independent architectural observation by Kiven Chen*
