@@ -1,3 +1,8 @@
+---
+layout: default
+title: August 16, 2026 — A Strategic Letter to Cursor: Build the Control Plane for Every Developer Machine
+---
+
 # August 16, 2026 — A Strategic Letter to Cursor: Build the Control Plane for Every Developer Machine
 
 *The original strategic letter and the case for a unified execution-node architecture.*
